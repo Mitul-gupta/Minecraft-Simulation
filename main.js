@@ -44,23 +44,24 @@ function my_keydown(e){
 
 
 // Check if the SHIFT and P keys are pressed together
-if (e.shiftkey == true && keyPressed =='80')
+if (e.shiftKey == true && keyPressed =='80')
 {
 	block_image_width= block_image_width+10;
 	block_image_height= block_image_height +10;
 	document.getElementById("current_width").innerHTML=block_image_width;
 	document.getElementById("current_height").innerHTML=block_image_height;
+	console.log("p and shift pressed together")
 
 }
 
 // Check if the SHIFT and M keys are pressed together
-if (e.shiftkey == true && keyPressed =='77')
+if (e.shiftKey == true && keyPressed =='77')
 {
 	block_image_width= block_image_width-10;
 	block_image_height= block_image_height -10;
 	document.getElementById("current_width").innerHTML = block_image_width;
 	document.getElementById("current_height").innerHTML = block_image_height;
-
+ console.log("m and shift pressed together");
 }
 
     // Check if the key value is equal to the UP arrow key value 38
